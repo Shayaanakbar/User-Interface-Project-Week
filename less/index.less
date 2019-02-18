@@ -33,6 +33,7 @@ footer,header,hgroup,menu,nav,section{
 }
 body{
   line-height:1;
+  font-family: "Arial", sans-serif;
 }
 ol,ul{
   list-style:none;
@@ -57,151 +58,213 @@ table{
   border-spacing:0;
 }
 
-/* Your Code Goes Here */
-
-.container {
-  width: 1000px;
-  border-style: solid;
-  border-color: red;
-  border-width: 2px 10px 4px 20px;
+img {
+  max-width: 100%;
 }
+
+/* Your Code Goes Here */
 
 .top-menu-content {
   // width: 1000px;
+  max-width: 100%;
   border-style: solid;
   border-color: black;
   border-width: 2px 10px 4px 20px;
+  background-color: rgb(156, 165, 175);
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2,
+  nav {
+    display: inline-block;
+  }
 }
 
 .jumbotron {
   // width: 1000px;
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
   border-style: solid;
   border-color: green;
   border-width: 2px 10px 4px 20px;
+  min-height: 600px;
+  background-image: url("../img/home/home-jumbotron.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 
-.top-content {
-  // width: 1000px;
-  border-style: solid;
-  border-color: pink;
-  border-width: 2px 10px 4px 20px;
+.project {
+  &-header {
+    position: relative;
+
+    h3 {
+      color: white;
+      position: absolute;
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: gray;
+      bottom: -13px;
+      right: 54px;
+    }
+  }
+
+  &-content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 75px 0;
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.smithJones {
-  // width: 1000px;
-  border-style: solid;
-  border-color: yellow;
-  border-width: 2px 10px 4px 20px;
+footer {
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    > div {
+      padding: 10px 15px;
+
+      > p {
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
 }
 
-.pic1 {
-  // width: 1000px;
-  border-style: solid;
-  border-color: paleturquoise;
-  border-width: 2px 10px 4px 20px;
-}
 
-.Futuristic {
-  // width: 1000px;
+.container {
+  max-width: 1000px;
   border-style: solid;
-  border-color: purple;
+  border-color: red;
   border-width: 2px 10px 4px 20px;
-}
+  
+  .top-content {
+    // width: 1000px;
+    border-style: solid;
+    border-color: pink;
+    border-width: 2px 10px 4px 20px;
+  }
 
-.pic2 {
-  // width: 1000px;
-  border-style: solid;
-  border-color: skyblue   ;
-  border-width: 2px 10px 4px 20px;
-}
+  .card {
+    display: flex;
+  
+    .img-right {
+      order: 2;
+    }
+  }
+  
+  
+  .main-content-bottom {
+    // width: 1000px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .villas {
+    // width: 1000px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .pic3 {
+    // width: 1000px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .OUTSKIRTS {
+    // width: 1000px;
+    border-style: solid;
+    border-color: salmon;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .pic4 {
+    // width: 1000px;
+    border-style: solid;
+    border-color: slateblue;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .THEBLOCKS {
+    // width: 1000px;
+    border-style: solid;
+    border-color: royalblue;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .pic5 {
+    // width: 1000px;
+    border-style: solid;
+    border-color: wheat;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .footer-content {
+    // width: 1000px;
+    border-style: solid;
+    border-color: teal;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .email {
+    // width: 1000px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .NewYork {
+    // width: 1000px;
+    border-style: solid;
+    border-color: plum;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .Florida {
+    // width: 1000px;
+    border-style: solid;
+    border-color: peru;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .California {
+    // width: 1000px;
+    border-style: solid;
+    border-color: powderblue;
+    border-width: 2px 10px 4px 20px;
+  }
+  
+  .copyright {
+    // width: 1000px;
+    border-style: solid;
+    border-color: palegreen;
+    border-width: 2px 10px 4px 20px;
+  }
 
-.main-content-bottom {
-  // width: 1000px;
-  border-style: solid;
-  border-color: orange;
-  border-width: 2px 10px 4px 20px;
-}
 
-.villas {
-  // width: 1000px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 2px 10px 4px 20px;
-}
-
-.pic3 {
-  // width: 1000px;
-  border-style: solid;
-  border-color: blueviolet;
-  border-width: 2px 10px 4px 20px;
-}
-
-.OUTSKIRTS {
-  // width: 1000px;
-  border-style: solid;
-  border-color: salmon;
-  border-width: 2px 10px 4px 20px;
-}
-
-.pic4 {
-  // width: 1000px;
-  border-style: solid;
-  border-color: slateblue;
-  border-width: 2px 10px 4px 20px;
-}
-
-.THEBLOCKS {
-  // width: 1000px;
-  border-style: solid;
-  border-color: royalblue;
-  border-width: 2px 10px 4px 20px;
-}
-
-.pic5 {
-  // width: 1000px;
-  border-style: solid;
-  border-color: wheat;
-  border-width: 2px 10px 4px 20px;
-}
-
-.footer-content {
-  // width: 1000px;
-  border-style: solid;
-  border-color: teal;
-  border-width: 2px 10px 4px 20px;
-}
-
-.email {
-  // width: 1000px;
-  border-style: solid;
-  border-color: blueviolet;
-  border-width: 2px 10px 4px 20px;
-}
-
-.NewYork {
-  // width: 1000px;
-  border-style: solid;
-  border-color: plum;
-  border-width: 2px 10px 4px 20px;
-}
-
-.Florida {
-  // width: 1000px;
-  border-style: solid;
-  border-color: peru;
-  border-width: 2px 10px 4px 20px;
-}
-
-.California {
-  // width: 1000px;
-  border-style: solid;
-  border-color: powderblue;
-  border-width: 2px 10px 4px 20px;
-}
-
-.copyright {
-  // width: 1000px;
-  border-style: solid;
-  border-color: palegreen;
-  border-width: 2px 10px 4px 20px;
 }
