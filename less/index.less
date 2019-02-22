@@ -64,6 +64,9 @@ img {
 
 /* Your Code Goes Here */
 
+html {
+  font-size: 62.5%;
+}
 
 
 // TOP MENU CONTENT 
@@ -297,6 +300,8 @@ footer {
 
 
 
+
+
 .container {
   max-width: 1000px;
   // border-style: solid;
@@ -340,6 +345,34 @@ footer {
 }
 
 
+@mobile: ~"(max-width: 500px)";
+@media @mobile {
+  .navigation {
+    padding: 10px;
+    span {
+      font-size: 2.4rem;
+      font-family: sans-serif;
+    }
+  }
+
+  .jumbotron {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+
+    line-height: 75px;
+    color: white;
+    border-width: 2px 10px 4px 20px;
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+
 // SERVICES TAB 
 
 
@@ -355,7 +388,7 @@ footer {
 .container-services header {
   width: 100%;
   margin: 0 auto;
-  border: 10 px solid black;
+  // border: 10 px solid black;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -364,7 +397,7 @@ footer {
 
 .container-services header nav {
   width: 100%;
-  border: 10px solid green;
+  // border: 10px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -375,7 +408,7 @@ footer {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  border: 20px solid blue;
+  // border: 20px solid blue;
   margin: 0 85px;
 }
 
@@ -390,7 +423,7 @@ footer {
 }
 
 .container-services img {
-  // width: 100%;
+  // width: 1000px;
 }
 
 .top-paragraph {
@@ -401,7 +434,10 @@ footer {
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
+
 }
+
+
 
 .tabs-links {
   display: flex;
@@ -426,7 +462,7 @@ footer {
 
 .section-tabs {
   display: flex;
-  border: 10px solid orange;
+  // border: 10px solid orange;
   justify-content: center;
   width: 100%; 
 }
@@ -443,7 +479,7 @@ footer {
 .tabs-items {
   display: flex;
   width: 100%;
-  border: 10px solid pink;
+  // border: 10px solid pink;
 
   .tabs-item-selected {
     display: flex;
@@ -463,9 +499,168 @@ footer {
   }
 
   .img {
-    border: 10px solid black;
+    // border: 10px solid black;
   }
 
 }
 
 
+// CONTACT US CONTAINER 
+
+.container-contact {
+  // border: 10px solid black;
+  margin: 37px;
+  // width: 50%;
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  h2 {
+    font-size: 24px;
+    padding-bottom: 38px;
+    font-weight: bold;
+  }
+
+
+  .email {
+    // border: 10px solid black;
+    margin: 40px;
+    // width: 140%;
+  }
+
+  .buildings {
+    // border: 10px solid black;
+    margin: 40px;
+    width: 137%;
+  }
+
+  .overview {
+    // border: 10px solid black;
+    margin: 40px;
+    width: 137%;
+  }
+
+  .radio {
+    // border: 10px solid black;
+    margin: 40px;
+  }
+
+
+  .button {
+    border: 1px solid #222;
+    padding: 15px 25px;
+    width: 150px;
+  
+    font-size: 1rem;
+    min-width: 160px;
+
+}
+}
+
+
+
+
+.form-needs {
+  width: 58%;
+  height: 161px;
+}
+
+.form-input {
+  width: 96%;
+  height: 31px;
+}
+
+.container-bottom {
+  // border: 10px solid brown;
+  margin: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 1px;
+  font-size: 16px;
+  border: 1px solid black;
+  width: 58%;
+  height: 32px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  // display: inline-block;
+  // width: 58%;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+// .dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+// .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  
+  .paragraphs {
+    // border: 10px solid orange;
+    padding-bottom: 73px;
+    
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    
+  }
+
+  h3 {
+    // line-height: 24px;
+  }
+
+  h4 {
+    font-weight: bold;
+
+  }
+
+   p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+
+  }
+
+
+}
+
+.questionaire {
+  // border: 10px solid blue;
+}
