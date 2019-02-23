@@ -12,12 +12,6 @@ function openNav() {
   }
 
 
-//   for(let i =0; i < hamButton.length; i++) {
-//     hamButton[i].addEventListener("click", showNav);
-
-// } 
-
-
 
   class TabLink {
     constructor(element) {
@@ -25,7 +19,8 @@ function openNav() {
       this.data = this.element.dataset.tab;
       this.itemElement = document.querySelector(`.tabs-item[data-tab= '${this.data}']`);
       this.tabItem = new tabItem(this.itemElement);
-      this.element.addEventListener("click", (e) => { this.select(e); });
+      this.element.addEventListener("click", (e) => { this.select(e); 
+    });
   };
 
   select(e) {
