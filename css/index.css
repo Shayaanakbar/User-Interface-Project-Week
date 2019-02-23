@@ -157,8 +157,32 @@ html {
   justify-content: space-between;
   width: 1000px;
 }
+.top-menu-content .menu-close {
+  display: none;
+}
+@media (max-width: 500px) {
+  .top-menu-content {
+    max-width: 500px;
+  }
+}
 .top-menu-content .brand {
   font-size: 28px;
+}
+.top-menu-content .dropdown a:hover,
+.top-menu-content .dropdown a:focus {
+  color: #504545;
+}
+.top-menu-content .menu-close {
+  position: absolute;
+  top: 0.8%;
+  right: 5.3;
+  font-size: 6rem;
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .top-menu-content .menu-close {
+    right: 7.5%;
+  }
 }
 .top-menu-content nav {
   display: inline-block;
@@ -167,8 +191,33 @@ html {
   font-size: 1.8rem;
   color: white;
 }
+.top-menu-content .dropdown {
+  height: 100%;
+  widows: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(153, 165, 174, 0.8);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+.top-menu-content .dropdown a {
+  font-weight: bold;
+  padding: 0.85rem;
+  text-decoration: none;
+  font-size: 3.5rem;
+  color: white;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.2s;
+}
 .top-menu-content .dropdown-content {
-  display: none;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 .jumbotron {
   display: flex;
