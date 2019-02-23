@@ -12,10 +12,10 @@ function openNav() {
   }
 
 
-  for(let i =0; i < hamButton.length; i++) {
-    hamButton[i].addEventListener("click", showNav);
+//   for(let i =0; i < hamButton.length; i++) {
+//     hamButton[i].addEventListener("click", showNav);
 
-} 
+// } 
 
 
 
@@ -24,21 +24,21 @@ function openNav() {
       this.element = element;
       this.data = this.element.dataset.tab;
       this.itemElement = document.querySelector(`.tabs-item[data-tab= '${this.data}']`);
-      this.tabItem = new TabItem(this.itemElement);
-      this.element.addEventListener("click", () => { this.select(); });
+      this.tabItem = new tabItem(this.itemElement);
+      this.element.addEventListener("click", (e) => { this.select(e); });
   };
 
-  select() {
+  select(e) {
     
     const links = document.querySelectorAll(".tabs-link");
 
     links.forEach( link => {
-      link.classList.remove('tabs-link-selected')
+      link.classList.remove('tabs-link-selected');
     });
 
-    this.element.classList.add("tabs-link-selected")
+    this.element.classList.add("tabs-link-selected");
 
-    this.tabItem.select()
+    this.tabItem.select();
 
 
   }
@@ -67,3 +67,5 @@ function openNav() {
   links.forEach(function (link) {
     return new TabLink(link)
   });
+
+
